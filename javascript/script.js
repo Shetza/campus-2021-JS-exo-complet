@@ -26,7 +26,8 @@ listButtom.addEventListener('click', function () {
         let ParentTitleSpan;
         response.forEach(function (element) {
             title = element.title;
-            titleSpan = document.createElement('span');
+            console.log(title);
+            titleSpan = document.createElement('h1');
             titleSpan.innerHTML = title;
             ParentTitleSpan = document.querySelector('#carousel');
             ParentTitleSpan.appendChild(titleSpan);
@@ -34,7 +35,7 @@ listButtom.addEventListener('click', function () {
         $('#carousel').carouFredSel({
             responsive: true,
             align: "center",
-            direction: 'left'
+            direction: 'left',
         });
     }
 });
