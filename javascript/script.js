@@ -1,8 +1,10 @@
 let listButtom = document.querySelector('#declencheur');
 listButtom.addEventListener('click', function () {
     fetch("https://jsonplaceholder.typicode.com/users/1/posts")
-        .then(response => response.json())
-        .then(response => dataInFeed(response));
+        .then(function (response) {
+            return response.json();})
+        .then(function(response){
+            return dataInFeed(response)});
     function dataInFeed(response) {
         let title;
         let titleSpan;
@@ -22,4 +24,4 @@ listButtom.addEventListener('click', function () {
             });
         });
     }
-});
+});  //préfère 27 :)
