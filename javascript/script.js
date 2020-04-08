@@ -25,3 +25,23 @@ listButtom.addEventListener('click', function () {
         });
     }
 });  //préfère 27 :)
+
+
+
+
+
+// $(document).ready(function() {
+//     document.querySelector('#declencheur').addEventListener('click', () => {
+//         fetch("https://jsonplaceholder.typicode.com/users/1/posts")
+//             .then(res => res.json())
+//             .then(data => data.forEach(el => document.getElementById("carousel").appendChild(document.createRange().createContextualFragment(`<div><h3>${el.title}</h3><p>${el.body}</p></div>`, 'text/html'))));
+//     });
+//     $('#carousel').carouFredSel({
+//         responsive: true,
+//         align: "center",
+//         direction: 'left'
+//     });
+// });
+
+
+
